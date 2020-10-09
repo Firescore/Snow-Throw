@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Snow-2
+  m_Name: Snow-15
   m_Shader: {fileID: -6465566751694194690, guid: 2ac683fed13fdf747a5d6a346a08cba8,
     type: 3}
   m_ShaderKeywords: 
@@ -33,7 +33,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SplatMap:
-        m_Texture: {fileID: 8400000, guid: b325ebbce4fd725478d509378e8423d0, type: 2}
+        m_Texture: {fileID: 8400000, guid: e4cb6356512f6dc4f80474b1e74c2b51, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TrailColor:

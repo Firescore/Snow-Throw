@@ -61,8 +61,8 @@ Material:
     - Vector1_DB9E2A00: 5.54
     - Vector1_E374AED0: 0.5
     - _DissolveRate: 1
-    - _Emission: 0.4
-    - _HeightMultiplier: 1000
+    - _Emission: 0.2
+    - _HeightMultiplier: 800
     - _Redius: 0.5
     - _SnowGloss: 2
     - _SparkleMix: 0.442

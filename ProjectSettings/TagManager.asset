@@ -8,6 +8,8 @@ TagManager:
   - R+15
   - R+90
   - StopRot
+  - R-0
+  - R-0-2
   layers:
   - Default
   - TransparentFX

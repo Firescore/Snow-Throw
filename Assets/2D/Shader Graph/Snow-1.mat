@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snow-1
+  m_Shader: {fileID: -6465566751694194690, guid: 2ac683fed13fdf747a5d6a346a08cba8,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 39cf4a1c64f46454c90e514ab0845cff, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: c2c4c5a2edcea8f4b99cb28c57e0df86, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: f281aa899c0e55943b53d1342d4b9180, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SplatMap:
+        m_Texture: {fileID: 8400000, guid: 8ffb359e7ae90b3459b729b5bf50065a, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TrailColor:
+        m_Texture: {fileID: 2800000, guid: dc85bc68220b81d44955908edb6585b7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TrailMap:
+        m_Texture: {fileID: 2800000, guid: ff0e5efed44b4c3439d7fb761ae524d4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TrailNormal:
+        m_Texture: {fileID: 2800000, guid: dc85bc68220b81d44955908edb6585b7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - mainTex:
+        m_Texture: {fileID: 2800000, guid: 40da0395b61db4448b98bab66d6b549c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - trailTex:
+        m_Texture: {fileID: 2800000, guid: 40da0395b61db4448b98bab66d6b549c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_61AD9FE0: 100
+    - Vector1_DB9E2A00: 5.54
+    - Vector1_E374AED0: 0.5
+    - _DissolveRate: 1
+    - _Emission: 0.4
+    - _HeightMultiplier: 1000
+    - _Redius: 0.5
+    - _SnowGloss: 2
+    - _SparkleMix: 0.442
+    - _TrailBlend: 0.5
+    - _TrailGloss: 3
+    - _blur: 100
+    m_Colors:
+    - Color_3E7F8616: {r: 1, g: 1, b: 1, a: 1}
+    - Vector2_2571FA0B: {r: 10, g: 10, b: 0, a: 0}
+    - Vector2_7B6887A: {r: 0, g: 0, b: 0, a: 0}
+    - _TrailColor_1: {r: 1, g: 1, b: 1, a: 1}
+    - _TrailTiling: {r: 10, g: 10, b: 0, a: 0}

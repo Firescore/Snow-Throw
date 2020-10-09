@@ -24,10 +24,10 @@ public class CameraFollow : MonoBehaviour
     private void LateUpdate()
     {
         // update position
-        Vector3 targetPosition = Target.position + Offset;
+        Vector3 targetPosition = Target.position + new Vector3(Offset.x,Offset.y+5,Offset.z);
         camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
 
         // update rotation
-        transform.LookAt(Target);
+        //transform.LookAt(Target);
     }
 }

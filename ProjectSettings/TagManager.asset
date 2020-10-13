@@ -10,6 +10,9 @@ TagManager:
   - StopRot
   - R-0
   - R-0-2
+  - castle
+  - SnowBall
+  - pillers
   layers:
   - Default
   - TransparentFX
@@ -20,9 +23,9 @@ TagManager:
   - 
   - 
   - Trails
-  - 
-  - 
-  - 
+  - ObsChar
+  - Ground
+  - SnowPlane
   - 
   - 
   - 

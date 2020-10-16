@@ -8,6 +8,7 @@ public class SnowBall : MonoBehaviour
     public static SnowBall snb;
     Rigidbody rb;
     public float incrementSpeed = 0.5f;
+    public float decreseSpeed = 0.5f;
     public bool isHitCastle = false;
     public bool isThrown = false;
     public GameObject snowParticle;
@@ -84,7 +85,7 @@ public class SnowBall : MonoBehaviour
             }
             if (isThrown)
             {
-                transform.localScale -= new Vector3(incrementSpeed*2, incrementSpeed*2, incrementSpeed*2) * Time.deltaTime;
+                transform.localScale -= new Vector3(decreseSpeed, decreseSpeed, decreseSpeed) * Time.deltaTime;
             }
             if(transform.localScale.magnitude <= 1f)
             {

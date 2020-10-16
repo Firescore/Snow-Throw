@@ -3599,6 +3599,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 130167512}
 --- !u!1 &132639093
@@ -20343,6 +20345,8 @@ MonoBehaviour:
   reachStart: 0
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 839985505}
 --- !u!1001 &842162379
@@ -23342,6 +23346,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 977594527}
 --- !u!1 &977999390
@@ -23559,6 +23565,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 981610773}
 --- !u!1 &982120045
@@ -23852,6 +23860,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 995146557}
 --- !u!1 &997336981
@@ -30446,6 +30456,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 1259299824}
 --- !u!1 &1260675972
@@ -30610,6 +30622,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 1262913467}
 --- !u!1 &1271065011
@@ -41654,6 +41668,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 1552175172}
 --- !u!1001 &1556129513
@@ -42759,6 +42775,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 1587411065}
 --- !u!1 &1589952298
@@ -43130,6 +43148,8 @@ MonoBehaviour:
   reachStart: 0
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 1603489488}
 --- !u!1 &1603867437
@@ -60110,6 +60130,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 1935592282}
 --- !u!1 &1938456286
@@ -78468,6 +78490,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 3166231813168292450}
 --- !u!1 &8296172669256986685
@@ -78537,6 +78561,8 @@ MonoBehaviour:
   reachStart: 1
   rechEnd: 0
   hitBall: 0
+  textSpwn: 0
+  Text: {fileID: 4183874831843866069, guid: e71c6c09dc89b9f4b846644d3c6578ee, type: 3}
   activeRun: 1
   anime: {fileID: 3166231813964148564}
 --- !u!4 &8345301035221903969

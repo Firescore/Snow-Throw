@@ -4895,6 +4895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   incrementSpeed: 0.35
+  decreseSpeed: 3
   isHitCastle: 0
   isThrown: 0
   snowParticle: {fileID: 4935253685958976912, guid: a3063218cffe85048b421753260922dc,
@@ -4911,4 +4912,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eaef86a0aa24564687fc2914fa0d5c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ponts: 00000000000000

@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Charecter_2 : MonoBehaviour
 {
     public float start, end;
     public float speed = 5f;
-    public bool reachStart = true, rechEnd = false, hitBall = false;
-
+    public bool reachStart = true, rechEnd = false, hitBall = false, textSpwn=false;
+    public GameObject Text;
     public bool activeRun = false;
     public Animator anime;
-
+    Rigidbody rb;
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();   
+    }
     void Update()
     {
         if (activeRun)
@@ -43,12 +48,30 @@ public class Charecter_2 : MonoBehaviour
             anime.SetBool("dead", true);
             Destroy(this.gameObject, 1.5f);
         }
+        if (textSpwn && !GameManager.gm.R_Left)
+        {
+            GameObject TT;
+            TT = Instantiate(Text, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), Quaternion.Euler(0, 180, 0));
+            TT.transform.parent = transform.parent;
+            Destroy(TT, 5);
+            textSpwn = false;
+        }
+        if (textSpwn && GameManager.gm.R_Left)
+        {
+            GameObject TT;
+            TT = Instantiate(Text, new Vector3(transform.position.x, transform.position.y + 2, transform.position.z), Quaternion.Euler(0, 90, 0));
+            TT.transform.parent = transform.parent;
+            Destroy(TT, 5);
+            textSpwn = false;
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("SnowBall"))
         {
-
+            
+            textSpwn = true;
+            rb.AddForce(Vector3.back * 15, ForceMode.Impulse);
             hitBall = true;
         }
     }

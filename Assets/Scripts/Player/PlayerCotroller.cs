@@ -36,7 +36,12 @@ public class PlayerCotroller : MonoBehaviour
             Player.transform.position = new Vector3(Player.transform.position.x, 5.98f, Player.transform.position.z);
             cF.Offset = new Vector3(-19f, 3.38f, 0f);
         }
+        if (other.gameObject.CompareTag("FinishLine"))
+        {
+            GameManager.gm.isFinishLineCrossed = true;
+        }
     }
+    
 
     
 }

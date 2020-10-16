@@ -4769,6 +4769,7 @@ GameObject:
   - component: {fileID: 3674031008180176640}
   - component: {fileID: 3674031008180176651}
   - component: {fileID: 3674031008180176646}
+  - component: {fileID: -1380524325090239213}
   m_Layer: 0
   m_Name: SnowBall
   m_TagString: SnowBall
@@ -4817,7 +4818,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 55821b1cef5eb47b399b74f4d54c63ee, type: 2}
+  - {fileID: 2100000, guid: bee4a3f42da94b74ea8728cf9ff8416c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4893,7 +4894,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7258bca63ab14c648a98024513c4db39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  incrementSpeed: 0.35
   isHitCastle: 0
   isThrown: 0
-  snowParticle: {fileID: 8450160767206881361, guid: 1a40de59f577f41459714991c2b1ec39,
+  snowParticle: {fileID: 4935253685958976912, guid: a3063218cffe85048b421753260922dc,
     type: 3}
+--- !u!114 &-1380524325090239213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3674031008170817265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eaef86a0aa24564687fc2914fa0d5c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ponts: 0000000000000000

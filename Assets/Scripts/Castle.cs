@@ -12,25 +12,25 @@ public class Castle : MonoBehaviour
         {
             childObject.Add(child.gameObject);
         }
-        for(int i = 0; i < childObject.Count; i++)
+        for (int i = 0; i < childObject.Count; i++)
         {
             childObject[i].GetComponent<Rigidbody>().isKinematic = enabled;
         }
     }
     private void Update()
     {
-            if (isHitCastle)
+        if (isHitCastle)
+        {
+            for (int i = 0; i < childObject.Count; i++)
             {
-                for (int i = 0; i < childObject.Count; i++)
+                childObject[i].GetComponent<Rigidbody>().isKinematic = false;
+                childObject[i].GetComponent<Rigidbody>().useGravity = true;
+                if (childObject.Count == childObject.Count - 1)
                 {
-                    childObject[i].GetComponent<Rigidbody>().isKinematic = false;
-                    childObject[i].GetComponent<Rigidbody>().useGravity = true;
-                    if (childObject.Count == childObject.Count - 1)
-                    {
-                        isHitCastle = false;
-                    }
+                    isHitCastle = false;
                 }
-            } 
+            }
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -38,6 +38,7 @@ public class Castle : MonoBehaviour
         if (collision.gameObject.CompareTag("SnowBall"))
         {
             isHitCastle = true;
+            Destroy(this.gameObject, 1f);
         }
     }
 }

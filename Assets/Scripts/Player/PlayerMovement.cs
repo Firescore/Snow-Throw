@@ -11,31 +11,35 @@ public class PlayerMovement : MonoBehaviour
     public bool snowBallSpwan = false;
     private void Update()
     {
-        if (GameManager.gm.isMousePressed && rot != null)
+        if (!GameManager.gm.isFinishLineCrossed)
         {
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            rot.enabled = true;
-        }
-        else
-        {
-            if(rot != null)
+            if (GameManager.gm.isMousePressed && rot != null)
             {
-                rot.enabled = false;
+                transform.Translate(Vector3.forward * speed * Time.deltaTime);
+                rot.enabled = true;
             }
-            
-        }
-        if(GameManager.gm.isMousePressed && !snowBallSpwan && rot == null)
-        {
-            GameObject Snow = Instantiate(SnowBall, snowBall.position, Quaternion.identity);
-            Snow.transform.parent = Player.transform;
-            SnowBallData = Snow;
-            rot = Snow.GetComponent<CFX_AutoRotate>();
-            snowBallSpwan = true;
-        }
-        if (Input.GetMouseButtonUp(0) && snowBallSpwan)
-        {
-            snowBallSpwan = false;
+            else
+            {
+                if (rot != null)
+                {
+                    rot.enabled = false;
+                }
+
+            }
+            if (GameManager.gm.isMousePressed && !snowBallSpwan && rot == null)
+            {
+                GameObject Snow = Instantiate(SnowBall, snowBall.position, Quaternion.identity);
+                Snow.transform.parent = Player.transform;
+                SnowBallData = Snow;
+                rot = Snow.GetComponent<CFX_AutoRotate>();
+                snowBallSpwan = true;
+            }
+            if (Input.GetMouseButtonUp(0) && snowBallSpwan)
+            {
+                snowBallSpwan = false;
+            }
         }
     }
+        
 
 }

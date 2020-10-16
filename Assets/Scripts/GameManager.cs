@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
 
     public bool R_Left = false;
     public bool R_Down = false;
+    public bool isFinishLineCrossed = false;
+
+    public List<Transform> rankBoard = new List<Transform>();
     // Start is called before the first frame update
     void Start()
     {

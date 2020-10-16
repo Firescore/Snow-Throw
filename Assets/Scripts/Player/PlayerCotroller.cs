@@ -11,6 +11,7 @@ public class PlayerCotroller : MonoBehaviour
         if (other.gameObject.CompareTag("R-15"))
         {
             Player.transform.rotation = Quaternion.Euler(-15, 180, 0);
+            Player.transform.position = new Vector3(Player.transform.position.x, 0.6f, Player.transform.position.z);
         }
         if (other.gameObject.CompareTag("R-0"))
         {
@@ -20,7 +21,7 @@ public class PlayerCotroller : MonoBehaviour
         {
             GameManager.gm.R_Down = false;
             Player.transform.rotation = Quaternion.Euler(0, 90, 0);
-            Player.transform.position = new Vector3(Player.transform.position.x, -6.5f, Player.transform.position.z);
+            Player.transform.position = new Vector3(Player.transform.position.x, -6f, Player.transform.position.z);
             cF.Offset = new Vector3(-16f, 0f, 0f);
         }
         if (other.gameObject.CompareTag("R+15"))
@@ -33,7 +34,7 @@ public class PlayerCotroller : MonoBehaviour
         {
             GameManager.gm.R_Left = true;
             Player.transform.rotation = Quaternion.Euler(0, 90, 0);
-            Player.transform.position = new Vector3(Player.transform.position.x, 5.98f, Player.transform.position.z);
+            Player.transform.position = new Vector3(Player.transform.position.x, 6.1f, Player.transform.position.z);
             cF.Offset = new Vector3(-19f, 3.38f, 0f);
         }
         if (other.gameObject.CompareTag("FinishLine"))

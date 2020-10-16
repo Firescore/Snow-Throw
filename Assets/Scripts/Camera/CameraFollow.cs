@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour
     // change this value to get desired smoothness
     public float SmoothTime = 0.3f;
 
+    public PlayerMovement pm;
     // This value will change at the runtime depending on target movement. Initialize with zero vector.
     private Vector3 velocity = Vector3.zero;
 
@@ -20,14 +21,25 @@ public class CameraFollow : MonoBehaviour
     {
         //Offset = camTransform.position - Target.position;
     }
-
+    private void Update()
+    {
+        if (GameManager.gm.isFinishLineCrossed)
+        {
+            Offset = new Vector3(-19, 5, -4);
+            if(Target != null)
+                Target = pm.Snow.transform;
+        }
+    }
     private void LateUpdate()
     {
-        // update position
-        Vector3 targetPosition = Target.position + new Vector3(Offset.x,Offset.y+5,Offset.z);
-        camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
+        if(Target != null)
+        {
+            // update position
+            Vector3 targetPosition = Target.position + new Vector3(Offset.x, Offset.y + 5, Offset.z);
+            camTransform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, SmoothTime);
 
-        // update rotation
-        transform.LookAt(Target);
+            // update rotation
+            transform.LookAt(Target);
+        }
     }
 }

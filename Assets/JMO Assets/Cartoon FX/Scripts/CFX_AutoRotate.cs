@@ -16,5 +16,13 @@ public class CFX_AutoRotate : MonoBehaviour
 	void Update()
 	{
 		this.transform.Rotate(rotation * Time.deltaTime, space);
+        if (GameManager.gm.R_Left)
+        {
+            rotation = new Vector3(0, 0, -90);
+        }
+        else
+        {
+            rotation = new Vector3(-90, 0, 0);
+        }
 	}
 }

@@ -12,6 +12,8 @@ public class SnowBall : MonoBehaviour
     public bool isThrown = false;
     public GameObject snowParticle;
 
+    private bool Test=false;
+
 
     private void Start()
     {
@@ -23,7 +25,13 @@ public class SnowBall : MonoBehaviour
         
         if (!GameManager.gm.R_Down && !GameManager.gm.isFinishLineCrossed)
         {
-            if (GameManager.gm.isMousePressed)
+            if (GameManager.gm.isMousePressed && GameManager.gm.R_Left && !Test)
+            {
+                transform.localScale += new Vector3(incrementSpeed, incrementSpeed, incrementSpeed) * Time.deltaTime;
+                rb.isKinematic = true;
+                Test = true;
+            }
+            else if(GameManager.gm.isMousePressed)
             {
                 transform.localScale += new Vector3(incrementSpeed, incrementSpeed, incrementSpeed) * Time.deltaTime;
             }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class charecter : MonoBehaviour
 {
     public float start, end;
@@ -10,7 +11,11 @@ public class charecter : MonoBehaviour
 
     public bool activeRun = false;
     public Animator anime;
-
+    Rigidbody rb;
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
     void Update()
     {
         if (activeRun)
@@ -48,7 +53,7 @@ public class charecter : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("SnowBall"))
         {
-
+            rb.AddForce(Vector3.back * 15, ForceMode.Impulse);
             hitBall = true;
         }
     }

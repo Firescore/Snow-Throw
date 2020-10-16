@@ -5,7 +5,7 @@ public class PlayerMovement : MonoBehaviour
     public static PlayerMovement pm;
     public float speed = 5f;
     public CFX_AutoRotate rot;
-    public GameObject SnowBall, Player,SnowBallData;
+    public GameObject SnowBall, Player,SnowBallData, Snow;
     public Transform snowBall;
 
     public bool snowBallSpwan = false;
@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (GameManager.gm.isMousePressed && !snowBallSpwan && rot == null)
             {
-                GameObject Snow = Instantiate(SnowBall, snowBall.position, Quaternion.identity);
+                Snow = Instantiate(SnowBall, snowBall.position, Quaternion.identity);
                 Snow.transform.parent = Player.transform;
                 SnowBallData = Snow;
                 rot = Snow.GetComponent<CFX_AutoRotate>();

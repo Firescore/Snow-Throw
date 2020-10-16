@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager gm;
     public bool isMousePressed = false;
-
+    public bool[] Ponts;
     public bool R_Left = false;
     public bool R_Down = false;
     public bool isFinishLineCrossed = false;
